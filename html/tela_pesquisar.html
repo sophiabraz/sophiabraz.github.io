@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+    <head>
+        <title>Sociofy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/resset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=PT+Sans&family=PT+Serif&family=Raleway&display=swap" rel="stylesheet">  
+        <script src="../js/tab.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="tela_erro.html">
+                <img class='foto_perfil' src='img/perfil_inativo.jpeg' alt='ícone de uma pessoa inativa'>
+            </a>
+            <a href="tela_erro.html">
+                <figure class='configuracoes'>⚙️</figure>
+            </a>
+        </header>
+
+        <main>
+            <div class="tab">
+                <button class="tablink unactive" onclick="openPage('tab_foruns', this, '#2FD494', 'Fórum')">Fórum</button>
+                <button class="tablink unactive" onclick="openPage('tab_pessoas', this, '#2FD494','Pessoas')">Pessoas</button>
+            </div> 
+
+            <ul id="tab_foruns" class="tabcontent">
+                <li>
+                    <input type="checkbox" id="opcao1" name="Empreendimentos sociais">
+                    <label> Empreendimentos sociais </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao2" name="Saúde">
+                    <label> Saúde</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao3" name="Jurídico">
+                    <label> Jurídico</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao4" name="Alimentação">
+                    <label> Alimentação</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao5" name="Educação">
+                    <label> Educação</label>
+                </li>
+                <li>
+                    <a class='botao' onclick="filtros()" href="tela_pergunta_forum.html">
+                        OK ➡︎
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="tab_pessoas" class="tabcontent">
+                <li>
+                    <input type="checkbox" id="opcao6" name="Advogados">
+                    <label> Advogados</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao7" name="Médico">
+                    <label> Médico</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao8" name="Deputado">
+                    <label> Deputado</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao9" name="Dentista">
+                    <label> Dentista</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao10" name="Veterinário">
+                    <label> Veterinário</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao11" name="Engenheiro">
+                    <label> Engenheiro</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao12" name="Professor">
+                    <label> Professor</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="opcao13" name="Programador">
+                    <label> Programador</label>
+                </li>
+                <li>
+                    <a class='botao' onclick="filtros()" href="tela_pergunta_pessoas.html">
+                        OK ➡︎
+                    </a>
+                </li>
+            </ul>
+
+        </main>
+
+
+        <footer>
+            <a href="tela_menu.html">
+                <img class='footer' src="img/Casa_icon.jpeg" alt="Menu">
+            </a>
+            <a href="tela_pesquisar.html">
+                <img class='footer' src="img/Lupa_icon.jpeg" alt="Pesquisar">
+            </a>
+            <a href="tela_mensagens.html">
+                <img class='footer' src="img/Mensagem_icon.jpeg" alt="Mensagens">
+            </a>
+        </footer>
+    </body>
+</html>
